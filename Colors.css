@@ -17,15 +17,15 @@
 
   /* Kern-Teal (Brand) */
   --c-brand-950: #082a2d;
-  --c-brand-900: #0b3d44;  /* vorhanden: Header- und Akzentbasis */
-  --c-brand-850: #0c4c4c;
-  --c-brand-800: #0d5b5b;  /* vorhanden */
-  --c-brand-750: #0e6a6a;
-  --c-brand-700: #0f7a7a;  /* vorhanden */
-  --c-brand-650: #108787;
-  --c-brand-600: #139696;
-  --c-brand-550: #0fa0a0;
-  --c-brand-500: #0ea4a4;  /* vorhanden */
+  --c-brand-900: #0b2444;  /* vorhanden: Header- und Akzentbasis */
+  --c-brand-850: #0c384c;
+  --c-brand-800: #1d3a5f;  /* Kontakt */
+  --c-brand-750: #0e4d6a;
+  --c-brand-700: #0f587a;  /* Header Übergang & Überschriften */
+  --c-brand-650: #106587;
+  --c-brand-600: #137196;
+  --c-brand-550: #0f6ba0;
+  --c-brand-500: #0e8da4;  /* vorhanden */
   --c-brand-400: #38b6b6;
   --c-brand-300: #6ecaca;
   --c-brand-200: #a6dfdf;
