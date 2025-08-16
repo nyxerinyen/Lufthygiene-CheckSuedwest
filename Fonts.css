@@ -1,0 +1,18 @@
+@font-face{
+  font-family: 'InterVar';
+  src: url('fonts/Inter-VariableFont.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  /* Primäre Schriftfamilie als Variable */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial;
+}
+
+/* Utilities (optional) */
+.h1, h1{font-weight:800;letter-spacing:.2px}
+.h2, h2{font-weight:700}
+.small{font-size:.9rem;opacity:.9}
+.lead{font-size:1.1rem;line-height:1.5}

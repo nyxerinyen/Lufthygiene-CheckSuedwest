@@ -1,0 +1,131 @@
+:root{
+  /* Grundflächen & Text (helles UI) */
+  --c-bg-50:  #fbfefe;
+  --c-bg-100: #f6fafb;
+  --c-bg-200: #ecf6f7;
+  --c-surface-0:   #ffffff;
+  --c-surface-50:  #fbfefe;
+  --c-surface-100: #f8fdfd;
+
+  --c-ink:   #182326;  /* Haupttext (sehr dunkel, leicht grünlich-blau) */
+  --c-muted: #516166;  /* Sekundärtext */
+  --c-line:  #e2ecec;  /* feine Linien / Rahmen */
+
+  /* =========================================================
+     MARKENFARBEN – TEAL/BLAU (PRIMÄR) 
+     ---------------------------------------------------------
+
+  /* Kern-Teal (Brand) */
+  --c-brand-950: #082a2d;
+  --c-brand-900: #0b3d44;  /* vorhanden: Header- und Akzentbasis */
+  --c-brand-850: #0c4c4c;
+  --c-brand-800: #0d5b5b;  /* vorhanden */
+  --c-brand-750: #0e6a6a;
+  --c-brand-700: #0f7a7a;  /* vorhanden */
+  --c-brand-650: #108787;
+  --c-brand-600: #139696;
+  --c-brand-550: #0fa0a0;
+  --c-brand-500: #0ea4a4;  /* vorhanden */
+  --c-brand-400: #38b6b6;
+  --c-brand-300: #6ecaca;
+  --c-brand-200: #a6dfdf;
+  --c-brand-150: #c5eaea;
+  --c-brand-100: #bff3f3;  /* vorhanden (Logo-Verlauf) */
+  --c-brand-50:  #e8f9f9;
+  --c-accent:    #e8f6f6;  /* vorhandener, sehr sanfter Akzent */
+
+  /* Sekundärblau (kühler, seriös für Headlines/Links) */
+  --c-steel-900: #0e2233;
+  --c-steel-800: #143552;
+  --c-steel-700: #18456d;
+  --c-steel-600: #1f5c96;
+  --c-steel-500: #2a73b9;
+  --c-steel-400: #5a9bd1;
+  --c-steel-300: #8bbbe1;
+  --c-steel-200: #c4def1;
+  --c-steel-100: #e8f3fb;
+
+  /* Statusfarben (optional für Hinweise) */
+  --c-ok-600:      #1f8a4c;
+  --c-ok-100:      #e9f7ef;
+  --c-warn-600:    #b17900;
+  --c-warn-100:    #fff3d9;
+  --c-danger-600:  #a04444;
+  --c-danger-100:  #fde9e9;
+  --c-info-600:    #166c9c;
+  --c-info-100:    #e6f4fc;
+
+  /* =========================================================
+     SEMITRANSPARENTE / RGB-REFERENZEN  */
+
+  --rgb-ink:          24,35,38;
+  --rgb-brand-700:    15,122,122;
+  --rgb-brand-500:    14,164,164;
+  --rgb-steel-600:    31,92,150;
+  --rgb-line:         226,236,236;
+  --rgb-white:        255,255,255;
+  --rgb-black:        0,0,0;
+
+  /* =========================================================
+     HEADER / FOOTER MAPPING (bestehende Nutzung bleibt)
+     ========================================================= */
+  --c-header-900: var(--c-brand-900);
+  --c-header-700: var(--c-brand-700);
+  --c-header-500: var(--c-brand-500);
+  --c-header-subtext: #eafdfd;
+
+  --c-footer-900: #0b2f33;
+  --c-footer-800: #0a2529;
+  --c-footer-text:   #d6f3f3;
+  --c-footer-accent: #bfeeee;
+  --c-footer-hint:   #7fb8b8;
+
+  /* =========================================================
+     GRADIENT-TOKENS (für Header, Cards, Panels, Dekor)
+     ========================================================= */
+  --g-header:        linear-gradient(135deg, var(--c-header-900) 0%, var(--c-header-700) 60%, var(--c-header-500) 100%);
+  --g-hero:          linear-gradient(135deg, #ffffff 0%, var(--c-surface-100) 100%);
+  --g-card:          linear-gradient(180deg, #ffffff 0%, var(--c-surface-100) 100%);
+  --g-accent:        linear-gradient(90deg, var(--c-brand-700), var(--c-brand-500));
+  --g-diag-brand:    linear-gradient(135deg, var(--c-brand-800), var(--c-brand-500));
+  --g-sky:           linear-gradient(180deg, #ffffff 0%, var(--c-steel-100) 40%, var(--c-brand-50) 100%);
+  --g-foil:          radial-gradient(1200px 400px at 0% 0%, rgba(var(--rgb-white), .5), rgba(var(--rgb-white), 0) 60%),
+                     linear-gradient(135deg, rgba(var(--rgb-white), .06), rgba(var(--rgb-white), .0));
+
+  /* =========================================================
+     GLAS- & SHADOW-TOKENS (für Panels, Hover, Fokus)
+     ========================================================= */
+  --glass-bg:        rgba(var(--rgb-white), .45);
+  --glass-border:    rgba(var(--rgb-white), .6);
+  --glass-blur:      8px;        /* via backdrop-filter: blur(var(--glass-blur)) */
+
+  --shadow-soft:     0 4px 20px rgba(var(--rgb-black), .08);
+  --shadow-deep:     0 8px 30px rgba(var(--rgb-black), .12);
+  --shadow-brand:    0 6px 24px rgba(var(--rgb-brand-700), .18);
+  --glow-brand:      0 0 0 3px rgba(var(--rgb-brand-500), .18);
+
+  /* =========================================================
+     RAHMEN / LINIEN / ZIER
+     ========================================================= */
+  --border-soft:     1px solid var(--c-line);
+  --border-strong:   1px solid rgba(var(--rgb-ink), .12);
+  --ring-focus:      0 0 0 3px rgba(var(--rgb-steel-600), .25);
+
+  /* =========================================================
+     HOVER-HINTERGRÜNDE & HIGHLIGHTS
+     ========================================================= */
+  --hover-soft:      rgba(var(--rgb-brand-700), .06);
+  --hover-strong:    rgba(var(--rgb-brand-700), .12);
+  --highlight:       rgba(var(--rgb-white), .55);
+
+  /* =========================================================
+     UTILITY-FLÄCHEN (dezente Container-Farben)
+     ---------------------------------------------------------
+     Für abgesetzte Boxen, Infozeilen, Badge-Hintergründe etc.
+     ========================================================= */
+  --u-surface-1:     #ffffff;
+  --u-surface-2:     #fbfdfe;              /* kaum sichtbar blau */
+  --u-surface-3:     #f2f8fa;              /* etwas kräftiger */
+  --u-surface-4:     #e9f4f6;              /* deutlich sichtbarer abgesetzt */
+  --u-surface-accent: #eefbfb;             /* kühl-akzentuiert */
+}
